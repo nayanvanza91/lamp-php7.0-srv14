@@ -1,6 +1,6 @@
 from ubuntu:14.04
 
-MAINTAINER Nayan V. <nayan@krishtechnolabs.com>
+MAINTAINER Nayan V. <nayanvanza91@gmail.com>
 
 RUN apt-get update && apt-get install -y vim \
     && apt-get install -y software-properties-common \
