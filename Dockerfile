@@ -59,12 +59,10 @@ ADD tools/docker/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabl
 ADD tools/docker/php7/apache2/php.ini /etc/php/7.0/apache2/php.ini
 ADD tools/docker/php7/cli/php.ini /etc/php/7.0/cli/php.ini
 ADD tools/docker/phpmyadmin/config.inc.php /phpmyadmin/config.inc.php
-#ADD tools/docker/postfix/main.cf /etc/postfix/main.cf
 
 ADD tools/docker/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 ADD tools/docker/supervisor/conf.d/apps.conf /etc/supervisor/conf.d/apps.conf
 
-#ADD tools/docker/scripts/entrypoint.sh /entrypoint.sh
 ADD tools/docker/scripts/start.sh /start.sh
 
 RUN chmod +x /*.sh
